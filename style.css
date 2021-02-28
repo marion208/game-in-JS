@@ -1,0 +1,134 @@
+@font-face {
+    font-family: Lato-Light;
+    src: url("Lato/Lato-Light.ttf");
+}
+  
+body {
+    font-size: larger;
+    font-family: Lato-Light;
+    text-transform: uppercase;
+}
+
+.newGame{
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.newGame:hover {
+    font-weight: bold;
+    cursor: grab;
+}
+
+.contentGame {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+.globalPlayer1 {
+    grid-column: 1;
+    grid-row: 1;
+    text-align: center;
+    height: 30vh;
+    align-items: center;
+}
+.globalPlayer2 {
+    grid-column: 3;
+    grid-row: 1;
+    text-align: center;
+    height: 30vh;
+}
+.lanceDeDe {
+    grid-column: 2;
+    grid-row: 1;
+    text-align: center;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.currentScores {
+    grid-column: 1/4;
+    grid-row: 2;
+    height: 30vh;
+    display: flex;
+    justify-content: space-around;
+}
+.currentPlayer1 {
+    text-align: center;
+    place-self: center center;
+}
+.currentPlayer2 {
+    text-align: center;
+    place-self: center center;
+}
+.rollDiceAndHold {
+    text-align: center;
+    place-self: center center;
+}
+#comments {
+    grid-column: 2;
+    grid-row: 3;
+}
+
+.currentPlayer1, .currentPlayer2 {
+    background-color: rgb(234, 77, 76);
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#roundScorePlayer1, #roundScorePlayer2 {
+    color: white;
+}
+
+#iconPlus, #imgRollDice, #imgHold {
+    filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
+}
+
+#iconPlus {
+    height: 20px;
+}
+
+#identityPlayer1, #identityPlayer2 {
+    font-size: 35px;
+}
+
+#globalScorePlayer1, #globalScorePlayer2 {
+    color: red;
+    font-size: 45px;
+}
+
+#comments {
+    text-align: center;
+}
+
+#rollDice:hover {
+    font-weight: bold;
+    cursor: grab;
+}
+
+#hold:hover {
+    font-weight: bold;
+    cursor: grab;
+}
+
+#backgroundPlayer1 {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 50%;
+    height: 100%;
+    background-color: rgb(247, 247, 247);
+    z-index: -1;
+}
+#backgroundPlayer2 {
+    position: fixed;
+    top: 0px;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    background-color: rgb(247, 247, 247);
+    z-index: -1;
+}

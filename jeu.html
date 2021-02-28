@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Jeu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="newGame">
+        <p id="idNewGame"><object type="image/svg+xml" data="images/plus.svg" id="iconPlus">
+
+            </object>
+            New Game</p>
+    </div>
+
+    <div class="contentGame">
+        <div class="globalPlayer1">
+            <p id="identityPlayer1">Player 1</p>
+            <p id="globalScorePlayer1"></p>
+        </div>
+
+        <div class="globalPlayer2">
+            <p id="identityPlayer2">Player 2</p>
+            <p id="globalScorePlayer2"></p>
+        </div>
+
+        <div class="lanceDeDe">
+            <img id="imgDice" height="120px" width="120px" />
+        </div>
+        <div class="currentScores">
+            <div class="currentPlayer1">
+                <p>Current</p>
+                <p id="roundScorePlayer1"></p>
+            </div>
+
+            <div class="rollDiceAndHold">
+                <p id="rollDice"><img src="images/rollTheDice.svg" height="20px" width="20px" id="imgRollDice" /> Roll
+                    the
+                    dice</p>
+                <p id="hold"><img src="images/iconHold.svg" height="20px" width="20px" id="imgHold" /> Hold</p>
+            </div>
+
+            <div class="currentPlayer2">
+                <p>Current</p>
+                <p id="roundScorePlayer2"></p>
+            </div>
+
+        </div>
+
+        <p id="comments"></p>
+
+        <div id="backgroundPlayer1"></div>
+        <div id="backgroundPlayer2"></div>
+
+    </div>
+
+</body>
+
+<script type="text/javascript" src="script.js"></script>
+
+</html>
