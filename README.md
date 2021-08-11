@@ -1,5 +1,7 @@
 # game-in-JS
 
+Application en ligne : https://whispering-stream-18609.herokuapp.com/
+
 Règles du jeu :
 Le jeu comprend 2 joueurs sur un seul et même écran.
 Chaque joueur possède un score temporaire (ROUND) et un score global (GLOBAL).
@@ -13,6 +15,8 @@ tour de l’autre joueur.
 Le premier joueur qui atteint les 100 points sur global gagne le jeu.
 
 //
+
+Web link : https://whispering-stream-18609.herokuapp.com/
 
 Project realized during my training to have the bachelor in web applications developer
 
